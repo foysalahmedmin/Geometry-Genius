@@ -1,0 +1,242 @@
+:root{
+    ---primary-color : #1090D8 ;
+    ---dark-1 : #111111 ;
+    ---dark-2 : #414141 ;
+    ---dark-3 : #F1F1F1 ;
+}
+
+/* utility style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none ;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all .3s;
+}
+body{
+    background-color: var(---dark-3);
+}
+main {
+    margin-top: 10rem;
+}
+h1, h2, h3{
+    color:#111111 ;
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+p{
+    color: var(---dark-2);
+}
+.container{
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+section{
+    padding: 30px 7%;
+}
+/* end */
+
+/* header */
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 15px 7%;
+    box-shadow: 0 0 5px var(---dark-2);
+
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav .blog-Btn img{
+ height: 3rem;
+}
+
+/* end */
+
+/* cards Style */
+.calBtn{
+    width: 100%;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 1rem 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    background: var(---primary-color);
+    border-radius: .5rem;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.card {
+    width: 23rem;
+    padding: 2.5rem;
+    background-color: #ffff;
+    border: 1px solid var(---dark-3);
+    text-align: center;    
+    border-radius: .5rem;
+    box-shadow: 0 0 5px var(---dark-2);
+}
+.card .img{
+    height: 9.7rem;
+    margin-bottom: 2.8rem;
+    overflow: hidden;
+}
+.card .img img{
+    height: 100%;
+}
+.card .contents .card-name{
+    margin-bottom: .6rem;
+    text-transform: capitalize;
+}
+.card .contents .logics{
+    margin-bottom: .6rem;
+}
+.card .contents .logics .var{
+    margin:  .5rem 0 1rem;
+}
+.card .contents .logics .var .editor{
+    margin-left: .5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.card .contents .inputs{
+    margin-bottom: 2.9rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+.card .contents .inputs .checked{
+    margin-left: .7rem;
+    font-size: 1.4rem;
+    color: var(---primary-color);
+}
+input[type="number"]{
+    width: 5rem;
+    padding: .5rem;
+    text-align: center;
+    background: var(---dark-3);
+    border-radius: .5rem;
+
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* end  */
+
+
+/* result field style */
+.result{
+    width: 35rem;
+    height: 100%;
+    padding: 2.5rem;
+    background-color: #ffff;
+    border: 1px solid var(---dark-3);
+    text-align: center;    
+    border-radius: .5rem;
+    box-shadow: 0 0 5px var(---dark-2);
+}
+.resultTitle{
+    text-decoration: underline;
+    margin-bottom: 2.8rem;
+}
+table{
+    width: 100%;
+    font-size: 1.3rem;
+}
+td{
+    padding: .3rem .7rem;
+    word-wrap: normal;
+}
+.convertBtn, .converted{
+    cursor: pointer;
+    background-color: var(---primary-color);
+    border-radius: .5rem;
+    padding: .3rem .7rem;
+    color: #fff;
+    word-wrap: normal;
+}
+.converted{
+    background-color: var(---dark-3);
+    color: var(---dark-2);
+}
+/* end */
+
+
+/* blog */
+.title{
+    text-align:  center;
+    margin-bottom: 3rem;
+}
+.ansQusAccordion{
+    width: 100%;
+}
+.accordion-item{
+    border: 2px solid #fff;
+}
+.accordion-item .accordion-Btn{
+    background-color: var(---dark-2);
+    padding: .5rem .9rem;
+   
+}
+.accordion-item .accordion-Btn h3{
+    color: #fff;
+}
+.accordion-item .accordionBody p{
+    margin: .9rem ;
+}
+.accordion-item .accordionBody{
+    display: none;
+}
+.accordion-item .accordionBody.show{
+    display: block;
+}
+
+/* end */
+
+
+/* media query */
+@media screen and (max-width: 1040px){
+
+    .container{
+        display: block;
+    }
+    .result{
+        margin-top: 55px;
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 668px){
+
+    section{
+        padding: 30px 2.5%;
+    }
+    table{
+        width: 100%;
+        font-size: .7rem;
+    }
+    td{
+        padding: .3rem ;
+    }
+
+}
+/* end */

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <!-- favIcon -->
+    <link rel="shortcut icon" href="./images/favIcon.png" type="image/x-icon">
+    <!-- style -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/4206d5dcf6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header  -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>
+                    Interactive
+                </h1>
+                <p>
+                    Geometry Genius
+                </p>
+            </div>
+            <div class="blog-Btn">
+                <a href="./ansQuestions.html" >
+                    <img src= "./images/blog-favIcon.png" alt="">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- end -->
+    <main>
+        <section>
+            <div class="container">
+                <!-- cards Start -->
+                <div class="cards">
+                    <!-- triangle card -->
+                    <div class="card" id="triangle">
+                        <div class="img">
+                            <img src="./images/triangle.png" alt="">
+                        </div>
+                        <div class="contents">
+                            <h2 class="card-name" id="name-triangle">
+                                triangle
+                            </h2>
+                            <div class="logics">
+                                <p>Area(A) = <span class="formula" id="formula-triangle"> 0.5 * b * h</span></p>
+                                <div class="var">b = <span id="triangle-Var1">0</span> cm, | h = <span id="triangle-Var2">0</span> cm <i class="fa-regular fa-pen-to-square editor" id="triangle-Edit"></i></div>
+                            </div>
+                            <div class="inputs" id="triangle-inputField">
+                                <label for="b">
+                                    <input type="number" class="input-1" id="triangle-Input1" placeholder="b"> <span>cm</span>
+                                </label>
+                                <label for="h">
+                                    <input type="number" class="input-2" id="triangle-Input2" placeholder="h"> <span>cm</span>
+                                </label>
+                                <i class="fa-solid fa-square-check checked" id="triangle-checkBtn"></i>
+                            </div>
+                        </div>
+                        <button class="calBtn" id="triangleBtn">
+                            Calculate
+                        </button>
+                    </div>
+                    <!-- end -->
+
+                    <!-- rectangle card -->
+                    <div class="card" id="rectangle">
+                        <div class="img">
+                            <img src="./images/rectangle.png" alt="">
+                        </div>
+                        <div class="contents">
+                            <h2 class="card-name" id="name-rectangle">
+                                rectangle
+                            </h2>
+                            <div class="logics">
+                                <p>Area(A) = <span class="formula" id="formula-rectangle"> w * l</span></p>
+                                <div class="var">w = <span id="rectangle-Var1">0</span> cm, | l = <span id="rectangle-Var2">0</span> cm <i class="fa-regular fa-pen-to-square editor" id="rectangle-Edit"></i></div>
+                            </div>
+                            <div class="inputs" id="rectangle-inputField">
+                                <label for="b">
+                                    <input type="number" class="input-1" id="rectangle-Input1" placeholder="w"> <span>cm</span>
+                                </label>
+                                <label for="h">
+                                    <input type="number" class="input-2" id="rectangle-Input2" placeholder="l"> <span>cm</span>
+                                </label>
+                                <i class="fa-solid fa-square-check checked" id="rectangle-checkBtn"></i>
+                            </div>
+                        </div>
+                        <button class="calBtn" id="rectangleBtn">
+                            Calculate
+                        </button>
+                    </div>
+                    <!-- end -->
+
+                    <!-- parallelogram card -->
+                    <div class="card" id="parallelogram">
+                        <div class="img">
+                            <img src="./images/parallelogram.png" alt="">
+                        </div>
+                        <div class="contents">
+                            <h2 class="card-name" id="name-parallelogram">
+                                parallelogram
+                            </h2>
+                            <div class="logics">
+                                <p>Area(A) = <span class="formula" id="formula-parallelogram">b * h</span></p>
+                                <div class="var">b = <span id="parallelogram-Var1">0</span> cm, | h = <span id="parallelogram-Var2">0</span> cm <i class="fa-regular fa-pen-to-square editor" id="parallelogram-Edit"></i></div>
+                            </div>
+                            <div class="inputs" id="parallelogram-inputField">
+                                <label for="b">
+                                    <input type="number" class="input-1" id="parallelogram-Input1" placeholder="b"> <span>cm</span>
+                                </label>
+                                <label for="h">
+                                    <input type="number" class="input-2" id="parallelogram-Input2" placeholder="h"> <span>cm</span>
+                                </label>
+                                <i class="fa-solid fa-square-check checked" id="parallelogram-checkBtn"></i>
+                            </div>
+                        </div>
+                        <button class="calBtn" id="parallelogramBtn">
+                            Calculate
+                        </button>
+                    </div>
+                    <!-- end -->
+
+                    <!-- rhombus card -->
+                    <div class="card" id="rhombus">
+                        <div class="img">
+                            <img src="./images/rhombus.png" alt="">
+                        </div>
+                        <div class="contents">
+                            <h2 class="card-name" id="name-rhombus">
+                                rhombus
+                            </h2>
+                            <div class="logics">
+                                <p>Area(A) = <span class="formula" id="formula-rhombus"> 0.5 * d<sub>1</sub> * h<sub>2</sub></span></p>
+                                <div class="var">d<sub>1</sub> = <span id="rhombus-Var1">0</span> cm, | d<sub>2</sub> = <span id="rhombus-Var2">0</span> cm <i class="fa-regular fa-pen-to-square editor" id="rhombus-Edit"></i></div>
+                            </div>
+                            <div class="inputs" id="rhombus-inputField">
+                                <label for="b">
+                                    <input type="number" class="input-1" id="rhombus-Input1" placeholder="d1"> <span>cm</span>
+                                </label>
+                                <label for="h">
+                                    <input type="number" class="input-2" id="rhombus-Input2" placeholder="d2"> <span>cm</span>
+                                </label>
+                                <i class="fa-solid fa-square-check checked" id="rhombus-checkBtn"></i>
+                            </div>
+                        </div>
+                        <button class="calBtn" id="rhombusBtn">
+                            Calculate
+                        </button>
+                    </div>
+                    <!-- end -->
+
+                    <!-- pentagon card -->
+                    <div class="card" id="pentagon">
+                        <div class="img">
+                            <img src="./images/pentagon.png" alt="">
+                        </div>
+                        <div class="contents">
+                            <h2 class="card-name" id="name-pentagon">
+                                pentagon
+                            </h2>
+                            <div class="logics">
+                                <p>Area(A) = <span class="formula" id="formula-pentagon"> 0.5 * p * b</span></p>
+                                <div class="var">p = <span id="pentagon-Var1">0</span> cm, | b = <span id="pentagon-Var2">0</span> cm <i class="fa-regular fa-pen-to-square editor" id="pentagon-Edit"></i></div>
+                            </div>
+                            <div class="inputs" id="pentagon-inputField">
+                                <label for="b">
+                                    <input type="number" class="input-1" id="pentagon-Input1" placeholder="p"> <span>cm</span>
+                                </label>
+                                <label for="h">
+                                    <input type="number" class="input-2" id="pentagon-Input2" placeholder="b"> <span>cm</span>
+                                </label>
+                                <i class="fa-solid fa-square-check checked" id="pentagon-checkBtn"></i>
+                            </div>
+                        </div>
+                        <button class="calBtn" id="pentagonBtn">
+                            Calculate
+                        </button>
+                    </div>
+                    <!-- end -->
+
+                    <!-- ellipse card -->
+                    <div class="card" id="ellipse">
+                        <div class="img">
+                            <img src="./images/ellipse.png" alt="">
+                        </div>
+                        <div class="contents">
+                            <h2 class="card-name" id="name-ellipse">
+                                ellipse
+                            </h2>
+                            <div class="logics">
+                                <p>Area(A) = <span class="formula" id="formula-ellipse"> Pi ab</span></p>
+                                <div class="var">a = <span id="ellipse-Var1">0</span> cm, | b = <span id="ellipse-Var2">0</span> cm <i class="fa-regular fa-pen-to-square editor" id="ellipse-Edit"></i></div>
+                            </div>
+                            <div class="inputs" id="ellipse-inputField">
+                                <label for="b">
+                                    <input type="number" class="input-1" id="ellipse-Input1" placeholder="a"> <span>cm</span>
+                                </label>
+                                <label for="h">
+                                    <input type="number" class="input-2" id="ellipse-Input2" placeholder="b"> <span>cm</span>
+                                </label>
+                                <i class="fa-solid fa-square-check checked" id="ellipse-checkBtn"></i>
+                            </div>
+                        </div>
+                        <button class="calBtn" id="ellipseBtn">
+                            Calculate
+                        </button>
+                    </div>
+                </div>
+                <!-- end -->
+
+                <!-- result field start -->
+                <div class="result-field">
+                    <div class="result">
+                        <div class="resultTitle">
+                            <h2>
+                                Area Calculation
+                            </h2>
+                        </div>
+                        <table id="result-container">
+                            
+                        </table>
+                    </div>
+                </div>
+                <!-- end -->
+            </div>
+        </section>
+    </main>
+    
+
+
+
+
+    <!-- custom js -->
+    <script src="./js/utility.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
